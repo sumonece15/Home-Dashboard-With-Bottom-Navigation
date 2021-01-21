@@ -1,8 +1,10 @@
 package com.example.homedashboardwithbottomnav;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
 public class SettingActivity extends AppCompatActivity {
 
@@ -11,7 +13,20 @@ public class SettingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         this.setTitle("Setting Activity");
 
+    }
+
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home){
+
+            this.finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
