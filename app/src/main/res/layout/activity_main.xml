@@ -21,7 +21,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/bankingCardViewId"
             android:layout_width="160dp"
-            android:layout_height="144dp"
+            android:layout_height="145dp"
             android:layout_margin="5dp"
             android:clickable="true"
             android:foreground="?android:attr/selectableItemBackground">
