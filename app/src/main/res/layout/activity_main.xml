@@ -20,7 +20,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/bankingCardViewId"
-            android:layout_width="150dp"
+            android:layout_width="151dp"
             android:layout_height="150dp"
             android:layout_margin="5dp"
             android:clickable="true"
